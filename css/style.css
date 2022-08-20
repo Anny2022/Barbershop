@@ -1,0 +1,19 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/* Селектори
+універсальний *
+тега p
+id #text
+класс .text
+атрибут [href]
+дочірній .header > a
+нащадка .header a*/
