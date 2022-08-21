@@ -1,3 +1,11 @@
+:root {
+  --first-title-color: #303030;
+  --second-title-color: #ffffff;
+  --first-btn-color: #303030;
+  --second-btn-color: #ffffff;
+  --accent-color: #ff6c00;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -9,6 +17,55 @@ body {
 .link {
   text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: var(--second-btn-color);
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
 /* Селектори
 універсальний *
 тега p
@@ -17,3 +74,241 @@ id #text
 атрибут [href]
 дочірній .header > a
 нащадка .header a*/
+
+/*line-height: не задаем на боди  */
+
+/* HEADER */
+
+.header {
+  background-color: gray;
+}
+
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--second-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  color: var(--second-btn-color);
+}
+
+/* HERO */
+
+.hero {
+  background-color: tomato;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--first-title-color);
+  /* transform: rotate(-90deg); */
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+.hero-after-title {
+  color: #9da4bd;
+}
+
+/* ABOUT */
+
+.about-pre-title {
+  color: var(--first-title-color);
+}
+.about-title {
+  color: var(--first-title-color);
+}
+
+.about-after-title {
+  color: #555555;
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  color: var(--first-btn-color);
+}
+
+/* PRICES */
+
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--second-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  color: var(--second-btn-color);
+}
+
+/* BENEFITS */
+
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+.benefits-item sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: var(--first-title-color);
+}
+.benefits-pre-title {
+  color: var(--first-title-color);
+}
+.benefits-title {
+  color: var(--first-title-color);
+}
+.benefits-after-title {
+  color: #555555;
+}
+/* BARBERS */
+
+.barbers-pre-title {
+  color: var(--first-title-color);
+}
+
+.barbers-title {
+  color: var(--first-title-color);
+}
+
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+
+.barbers-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* GALLERY */
+
+.gallery-pre-title {
+  color: var(--first-title-color);
+}
+
+/* ONLINE */
+
+.online {
+  background-color: #191c26;
+}
+
+.online-title {
+  color: var(--second-title-color);
+}
+
+/* CONTACTS */
+
+.contacts {
+  background-color: #191c26;
+}
+
+.contacts-title {
+  color: var(--second-title-color);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  /* font-weight: 700; */
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-link:hover {
+  color: var(--second-title-color);
+}
+
+.contacts-bottom-title {
+  color: var(--second-title-color);
+}
+
+.contacts-bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #f7f7f7;
+}
+
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--first-title-color);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
