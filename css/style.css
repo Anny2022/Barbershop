@@ -32,6 +32,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -72,6 +76,11 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 .btn:hover,
@@ -119,6 +128,23 @@ id #text
   padding-bottom: 32px;
 }
 
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 130px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* .header-item:not(:last-child) {
+  margin-right: 30px;
+} */
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -133,14 +159,26 @@ id #text
   color: var(--accent-color);
 }
 
+.header-connect {
+  margin-left: auto;
+}
 .header-btn {
-  color: var(--second-btn-color);
+  background-color: var(--second-btn-color);
+  color: var(--first-btn-color);
+  margin-left: 40px;
 }
 
 /* HERO */
 
 .hero {
-  background-color: grey;
+}
+
+.hero .container {
+  display: flex;
+}
+
+.hero-list {
+  width: 90px;
 }
 
 .hero-link {
@@ -158,7 +196,9 @@ id #text
 }
 
 .hero-content {
+  background-color: grey;
   padding: 272px 100px 206px;
+  flex-grow: 1;
 }
 
 .hero-pre-title {
@@ -184,6 +224,19 @@ id #text
 .about {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.about .container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-content {
 }
 
 .about-pre-title {
@@ -214,8 +267,8 @@ id #text
 
 .prices {
   background-color: var(--first-title-color);
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .prices-pre-title {
@@ -228,9 +281,24 @@ id #text
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+}
+
 .prices-list {
   border: 1px solid #ffffff;
   padding: 30px 40px;
+  width: 50%;
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -310,6 +378,15 @@ id #text
   margin-bottom: 44px;
 }
 
+.barbers-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
 .barbers-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -340,6 +417,21 @@ id #text
 .gallery-pre-title {
   color: var(--first-title-color);
   margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* column-gap: 30px;
+  row-gap: 60px; */
+  gap: 30px;
+  /* margin: -15px; */
+}
+
+.gallery-item {
+  /* width: calc(100% / 4 - 30px);
+  margin: 15px; */
+  width: calc((100%-90px) / 4);
 }
 
 /* ONLINE */
