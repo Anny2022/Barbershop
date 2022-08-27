@@ -592,6 +592,12 @@ id #text
   color: var(--second-title-color);
 }
 
+.contacts-icon {
+  stroke: currentColor;
+  fill: none;
+  margin-right: 16px;
+}
+
 .contacts-bottom-title {
   color: var(--second-title-color);
   margin-bottom: 20px;
