@@ -31,7 +31,7 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link">About</a>
+              <a href="./index.html" class="header-link link current">About</a>
             </li>
             <li class="header-item">
               <a href="" class="header-link link">Services and prices</a>
@@ -48,7 +48,9 @@
           <a href="tel:+380441111111" class="header-tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn">Online-booking</button>
+          <button type="button" class="header-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
@@ -268,12 +270,24 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./img/barbers-img-2.jpg"
-                alt="barbers image"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  src="./img/barbers-img-2.jpg"
+                  alt="barbers image"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi modi pariatur asperiores consequuntur aliquam quaerat
+                  cum a, deleniti consectetur impedit accusantium alias sunt
+                  repellendus, dolores rem porro nisi eveniet quasi! Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                  modi pariatur asperiores consequuntur aliquam quaerat cum a,
+                  deleniti consectetur impedit accusantium alias sunt
+                  repellendus, dolores rem porro nisi eveniet quasi!
+                </p>
+              </div>
               <h3 class="barbers-item-title">Michele Doe</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -316,12 +330,24 @@
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="./img/barbers-img-3.jpg"
-                alt="barbers image"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  src="./img/barbers-img-3.jpg"
+                  alt="barbers image"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi modi pariatur asperiores consequuntur aliquam quaerat
+                  cum a, deleniti consectetur impedit accusantium alias sunt
+                  repellendus, dolores rem porro nisi eveniet quasi! Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                  modi pariatur asperiores consequuntur aliquam quaerat cum a,
+                  deleniti consectetur impedit accusantium alias sunt
+                  repellendus, dolores rem porro nisi eveniet quasi!
+                </p>
+              </div>
               <h3 class="barbers-item-title">Alan Black</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -485,5 +511,12 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>Х</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
