@@ -438,6 +438,12 @@
         <div class="container">
           <section class="online">
             <h2 class="title online-title">Online-booking</h2>
+            <form class="online-form">
+              <input type="text" class="online-input online-item" name="online-name" placeholder="Name*">
+              <input type="tel" class="online-input online-item" name="online-tel" placeholder="Phone*">
+              <textarea name="online-message" class="online-text online-item" placeholder="Message"></textarea>
+              <button type="submit" class="btn online-btn">send</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="title contacts-title">Contacts</h2>
@@ -514,6 +520,103 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>Х</button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form action="#" class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Ім'я</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Введіть ім'я"
+                id="user-name"
+                required
+              />
+              <svg class="icon-input" width="18px" height="18px">
+                <use
+                  href="./img/icons.svg/sprite2.svg#icon-person-black-18dp"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Пошта</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                placeholder="Введіть пошту"
+                id="user-email"
+                required
+              />
+              <svg class="icon-input" width="18px" height="18px">
+                <use
+                  href="./img/icons.svg/sprite2.svg#icon-email-black-18dp"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder="Введіть телефон"
+                title="+38(096)111-11-11"
+                id="user-tel"
+                required
+              />
+              <svg class="icon-input" width="18px" height="18px">
+                <use
+                  href="./img/icons.svg/sprite2.svg#icon-phone-black-18dp"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Коментар</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введіть коментар"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="12px" height="12px">
+                  <use href="./img/icons.svg/sprite2.svg#icon-vector"></use>
+                </svg>
+              </span>
+              Політика користування</label
+            >
+          <!-- <fieldset>
+            <legend>Size</legend>
+            <label for="big">Big</label>
+            <input type="radio" name="size" id="big" value="big" />
+            <label for="small">Smal</label>
+            <input type="radio" name="size" id="small" value="small" checked />
+          </fieldset>
+          <select name="city" id="city" class="modal-input" multiple>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="Odessa" selected>Odessa</option>
+          </select> -->
+
+          <button type="submit" class="modal-btn btn">Online-booking</button>
+        </form>
       </div>
     </div>
 
