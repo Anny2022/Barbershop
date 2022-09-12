@@ -1,0 +1,24 @@
+.gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.gallery-pre-title {
+  color: var(--first-title-color);
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* column-gap: 30px;
+  row-gap: 60px; */
+  gap: 30px;
+  /* margin: -15px; */
+}
+
+.gallery-item {
+  /* width: calc(100% / 4 - 30px);
+  margin: 15px; */
+  width: calc((100% - 90px) / 4);
+}
