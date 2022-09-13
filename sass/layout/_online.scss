@@ -24,10 +24,11 @@
   color: #ffffff;
   outline: transparent;
   &::placeholder {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
+    @include font(11, 15, 600, 0.1em);
+    // font-weight: 600;
+    // font-size: 11px;
+    // line-height: 1.36;
+    // letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.4);
   }

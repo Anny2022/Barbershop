@@ -1,5 +1,6 @@
 .after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(18, 30, null, 0.02em);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
 }

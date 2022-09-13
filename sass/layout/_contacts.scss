@@ -21,12 +21,12 @@
 }
 
 .contacts-link {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(18, 30, null, 0.02em);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
   color: #9da4bd;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   &:hover {
     color: var(--second-title-color);
   }
@@ -48,8 +48,9 @@
 }
 
 .contacts-bottom-text {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(18, 30, null, 0.02em);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
   color: #9da4bd;
 }
